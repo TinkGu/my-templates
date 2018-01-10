@@ -1,0 +1,26 @@
+{
+  "name": "my-templates",
+  "version": "1.0.0",
+  "description": "my templates and snippets",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinkGu/my-templates.git"
+  },
+  "keywords": [
+    "templates",
+    "meta",
+    "snippets",
+    "gmfile"
+  ],
+  "author": "tinkgu <tlwrite@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TinkGu/my-templates/issues"
+  },
+  "homepage": "https://github.com/TinkGu/my-templates#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-vue-libs": "^1.2.1"
+  }
+}
