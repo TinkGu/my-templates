@@ -25,6 +25,7 @@ module.exports = {
         withWebpack: {
             type: 'confirm',
             message: 'expose webpack to eslint?',
+            default: false,
         },
         webpackConfig: {
             when: 'withWebpack',
