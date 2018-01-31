@@ -72,7 +72,8 @@ module.exports = {
                     'eslint-config-airbnb',
                 ].concat(reactPkgs)
             }
-            api.installDev(preset2pkg[renderData.preset])
+            const finalPkgs = pkgs.concat(preset2pkg[renderData.preset])
+            api.installDev(finalPkgs)
         }
     }
 }
