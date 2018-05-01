@@ -5,7 +5,7 @@ module.exports = {
             message: 'Pick an ESLint preset',
             choices: [
                 {
-                    name: 'loose-airbnb',
+                    name: 'loose-airbnb (without react)',
                     value: 'loose-airbnb',
                 },
                 {
@@ -17,7 +17,7 @@ module.exports = {
                     value: 'airbnb-base',
                 },
                 {
-                    name: 'aibnb',
+                    name: 'aibnb (without react)',
                     value: 'airbnb',
                 },
             ],
