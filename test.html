@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>微信 iOS 分享测试</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta content="telephone=no,email=no" name="format-detection" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+</head>
+
+<body>
+  <div id="root">
+    <p>本页面会在加载以后，使用 history.pushState 修改 url</p>
+    <p>添加一个 <span style="color:cornflowerblue">?ax=1</span> 的 querystring</p>
+    <p>分享成功后，安卓分享出来的就是修改后的 url，但是 iOS 是没有修改前的 url</p>
+  </div>
+  <script>
+    (function(){
+      if (window.history) {
+        window.history.pushState(null, '', window.location.origin + window.location.pathname + '?ax=1')
+      }
+    }());
+  </script>
+</body>
+
+</html>
